@@ -1,15 +1,17 @@
-import BarChart from '@/components/BarChart'
-import Header from '@/components/Header'
-import RecentOrders from '@/components/RecentOrders'
-import TopCard from '@/components/TopCard'
+import BarChart from "@/components/BarChart";
+import Header from "@/components/Header";
+import RecentOrders from "@/components/RecentOrders";
+import TopCard from "@/components/TopCard";
 
 export default function Home() {
   return (
-    <main className='bg-gray-100 min-h-screen'>
+    <main className="bg-gray-100 min-h-screen">
       <Header />
       <TopCard />
-      <BarChart />
-      <RecentOrders />
+      <div className="p-4 grid md:grid-cols-3 grid-cols-1 gap-4">
+        <BarChart />
+        <RecentOrders />
+      </div>
     </main>
-  )
+  );
 }

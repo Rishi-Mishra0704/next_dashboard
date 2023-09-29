@@ -30,7 +30,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
               <RxPerson size={20} />
             </div>
           </Link>
-          <Link href="/">
+          <Link href="/orders">
             <div className="bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-2xl inline-block">
               <HiOutlineShoppingBag size={20} />
             </div>
